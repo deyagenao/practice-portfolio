@@ -1,0 +1,246 @@
+/* General Formatting */
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Header Image */
+.header-img {
+    position: relative;
+    max-height: 780px;
+    /* text-align: center; */
+    margin: 0px;
+    padding: 0px;
+    background-color: #1B1B1B;
+}
+
+#header-image {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-height: 800px;
+}
+#header-text {
+    position: absolute;
+    top: 43%;
+    left: 20%;
+    font-family: 'Roboto Condensed', sans-serif;
+    transform: skewY(1deg);
+}
+
+#header-text a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#header-text h4 {
+    font-size: 4.5vw;
+}
+
+#header-text h6 {
+    font-size: 2.25vw;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Nav Bar */
+nav {
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    padding: 20px 15px 20px 10px;
+    background-color: #1B1B1B;
+    opacity: 0.97;
+    border-bottom: 4px solid;
+    border-bottom-color: #E59890; ;
+}
+
+nav div, nav li, nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+#logo {
+    font-size: 24px;
+}
+
+nav li {
+    font-size: 18px;
+}
+
+nav a:hover{
+    color: #E59890;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* General formatting for informational sections */
+.container {
+    min-height: 760px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container h2 {
+    text-align: center;
+    padding-top: 70px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 60px;
+    margin-bottom: 75px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* About Me Section */
+
+#about-blurb {
+    padding-left: 30px;
+}
+
+#about-text {
+    float: left;
+    width: 65%;
+    padding-top: 20px;
+    line-height: 26px;
+}
+
+#portfolio-photo {
+    height: 250px;
+    border-radius: 50%;
+    margin: 25px;
+    margin-left: 35px;
+}
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Projects Section */
+#projects {
+    background-color: #f8f8f8;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.project {
+    background-color: grey;
+    width: 300px;
+    height: 325px;
+    margin: 15px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    color: #E59890
+}
+
+#contact-form {
+    padding-top: 20px;
+    
+}
+
+
+form input, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    
+}
+
+input, textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+form input {
+    height: 30px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+button {
+    border-radius: 4px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: #E59890;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* textarea:focus {
+    border: 10px;
+    border-color: #E59890;
+} */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1B1B1B;
+    color: #ffffff;
+}
+
+footer a {
+    color: white;
+    font-size: 45px;
+    padding: 10px;
+    line-height: 70px;
+}
+
+footer a:hover{
+    color: #E59890;
+    font-size: 55px;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Responsive Elements */
+@media screen and (max-width: 915px) {
+    #about-blurb{
+        width: 80%;
+        max-width: 780;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about-text {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    #portfolio-photo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
