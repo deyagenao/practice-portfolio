@@ -82,6 +82,7 @@ nav a:hover{
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* General formatting for informational sections */
 .container {
+    height: auto;
     min-height: 760px;
     max-width: 1000px;
     margin: auto;
@@ -144,9 +145,27 @@ ul {
     margin-top: 40px;
 }
 
+#resume{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    float: none;
+}
 
+#resume-btn{
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid grey;
+    color: #000000;
+    font-size: 20px;
+    padding: 10px;    
+}
 
-
+#resume-btn:hover{
+    background-color: #E59890;
+    color: #ffffff;
+    border-color: #ffffff;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Projects Section */
@@ -170,6 +189,11 @@ ul {
     margin: 15px;
 }
 
+.project-description {
+    font-size:30px;
+    display: none;
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Contact Section */
@@ -182,10 +206,8 @@ ul {
 }
 
 #contact-form {
-    padding-top: 20px;
-    
+    padding-top: 20px;   
 }
-
 
 form input, textarea, button {
     font-family: 'Montserrat', sans-serif;

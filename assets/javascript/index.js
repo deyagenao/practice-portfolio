@@ -1,19 +1,7 @@
-$('#contact-form').submit(function(e) {
-  e.preventDefault();
-
-  $.ajax({
-    url: '',
-    method: 'POST',
-    data: { message: $('form').serialize() },
-    dataType: 'json'
-  }).done(function(response) {
-    $('#success').addClass('expand');
-    $('#contact-form')
-      .find('input[type=text], input[type=email], textarea')
-      .val('');
-  });
-});
-
-$('#close').click(function() {
-  $('#success').removeClass('expand');
-});
+// function for making project description visibile on hover
+$(".project").hover(function(){
+  var projectNum = $(this).data("num");
+  $(".project-description").show();
+}, function() {
+  $(".project-description").hide();
+})
