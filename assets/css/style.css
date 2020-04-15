@@ -55,7 +55,8 @@ nav {
     background-color: #1B1B1B;
     opacity: 0.96;
     border-bottom: 4px solid;
-    border-bottom-color: #E59890; ;
+    border-bottom-color: #E59890;
+    z-index: 3;
 }
 
 nav div, nav li, nav a {
@@ -183,15 +184,27 @@ ul {
 }
 
 .project {
-    background-color: grey;
+    background-color: rgb(203, 197, 197);
     width: 300px;
     height: 325px;
     margin: 15px;
+    position: relative;
+}
+
+.project img {
+    height: 100%;
+    margin: auto;
+}
+
+.project img:hover {
+    opacity: 30%;
 }
 
 .project-description {
     font-size:30px;
     display: none;
+    position: absolute;
+    bottom: 0px;
 }
 
 
